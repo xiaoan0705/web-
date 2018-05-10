@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper    
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper  namespace="com.design.register">
+
+<insert id="register" parameterType="java.util.HashMap">
+insert into regist (name,password,repassword,tel,email,pic)
+values (#{name},#{password},#{repassword},#{tel},#{email},#{pic})
+</insert>
+
+<select id="login" resultType="java.util.HashMap">
+select password  from regist where regist.name=#{name}
+</select>
+<select id="login1" resultType="java.util.HashMap">
+select pic  from regist where regist.name=#{name}
+</select>
+</mapper>

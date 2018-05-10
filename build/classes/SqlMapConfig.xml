@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>   
+<!DOCTYPE configuration    
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"    
+"http://mybatis.org/dtd/mybatis-3-config.dtd">   
+
+<configuration>   
+ <!-- 和spring整合后 environments配置将废除-->   
+ <environments default="development">   
+  <environment id="development">   
+  <!-- 使用jdbc事务管理-->   
+   <transactionManager type="JDBC" />   
+  <!-- 数据库连接池-->   
+   <dataSource type="POOLED">   
+<!--mysql值 com.mysql.jdbc.Driver -->  
+    <property name="driver" value="com.mysql.jdbc.Driver"/>   
+<!-- mysql url值 jdbc:mysql://IP或主机名:端口号（默认为3306）/库名?characterEncoding=utf-8 --> 
+
+    <property name="url" value="jdbc:mysql://localhost:3306/mytest?characterEncoding=utf-8"/>   
+<!--  连库用户名 --> 
+    <property name="username" value="root" />   
+<!--  连库密码 --> 
+    <property name="password" value="anxiufang" />   
+   </dataSource>   
+  </environment>   
+ </environments>
+ <mappers> 
+   <mapper class="com.design.register"/>
+   <mapper class="com.design.forum"/> 
+   <mapper class="com.design.pic"/>
+   <mapper class="com.design.ou"/>
+   <mapper class="com.design.mei"/>
+   <mapper class="com.design.di"/> 
+   <mapper class="com.design.jian"/> 
+   <mapper class="com.design.tian"/> 
+   <mapper class="com.design.ri"/> 
+   <mapper class="com.design.gu"/> 
+   <mapper class="com.design.wo"/> 
+   <mapper class="com.design.ke"/> 
+   <mapper class="com.design.can"/> 
+   <mapper class="com.design.chu"/> 
+   <mapper class="com.design.shu"/> 
+   <mapper class="com.design.yang"/> 
+   <mapper class="com.design.yu"/> 
+   <mapper class="com.design.child"/> 
+   <mapper class="com.design.find"/> 
+   <mapper class="com.design.one"/> 
+   <mapper class="com.design.two"/> 
+   <mapper class="com.design.three"/> 
+   <mapper class="com.design.four"/> 
+   <mapper class="com.design.gong"/> 
+   <mapper class="com.design.fu"/> 
+   <mapper class="com.design.bie"/> 
+   <mapper class="com.design.yue"/> 
+   <mapper class="com.design.reply"/> 
+    <mapper class="com.design.designer"/> 
+ </mappers> 
+   
+</configuration>  

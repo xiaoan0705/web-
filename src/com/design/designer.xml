@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper    
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper  namespace="com.design.designer">
+
+<insert id="designerChange" parameterType="java.util.HashMap">
+insert into designer (reply,name,pic)<!-- 表名 -->
+values (#{reply},#{name},#{pic})
+</insert>
+<select id="designerlist" resultType="java.util.HashMap">
+select * from designer
+</select>
+</mapper>

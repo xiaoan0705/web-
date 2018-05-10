@@ -1,0 +1,13 @@
+
+ul,li,ol {list-style:none;}
+
+input {outline: 0;}
+img {border:none;}
+a:link, a:visited {text-decoration:none;-webkit-transition:background-color .15s linear, color .15s linear;-moz-transition:background-color .15s linear, color .15s linear;transition:background-color .15s linear, color .15s linear;}
+a:hover {color:#f60;}
+a {color:#369;-webkit-backface-visibility:hidden;}
+.fl {float:left;}
+.fr {float:right;}
+.clear {clear:both;}
+:focus {outline: none}
+:hover {outline: none}

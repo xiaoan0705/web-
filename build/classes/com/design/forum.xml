@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper    
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper  namespace="com.design.forum">
+
+<insert id="blogChange" parameterType="java.util.HashMap">
+insert into blog (name,content,img,time)<!-- 表名 -->
+values (#{name},#{content},#{img},#{time})
+</insert>
+
+<select id="blogChange1" resultType="java.util.HashMap">
+select * from blog
+</select>
+
+<select id="blogChangep" resultType="java.util.HashMap">
+select * from blog where blog.content=#{content}
+</select>
+</mapper>
